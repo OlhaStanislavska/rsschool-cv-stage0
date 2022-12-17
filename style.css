@@ -77,12 +77,12 @@ a.nav-link:hover {
     flex-direction: row;
  }
 .column-left {
-    width: 38%;
+    width: 35%;
     background-color: var(--secondary-block-color);
     padding: 25px;
 }
 .column-right {
-    width: 62%;
+    width: 65%;
     background-color: var(--primary-block-color);
     padding: 25px;
 }
@@ -94,7 +94,7 @@ a.nav-link:hover {
     position: absolute;
     content: "";
     top: -75px;
-    left: 25px;
+    left: 20px;
     height: 150px;
     width: 35px;
     background-color: var(--secondary-text-color);
@@ -102,9 +102,9 @@ a.nav-link:hover {
 }
 h1 {
     position: relative;
-    font-size: 2.4em;
+    font-size: 2.35em;
     font-weight: 900;
-    padding: 0 25px;
+    padding: 0 20px;
     line-height: 100%;
     margin: 30px 0 7px 0;
     z-index: 10;
@@ -113,14 +113,14 @@ h2 {
     font-size: 1.05em;
     font-weight: var(--primary-text-weight);
     letter-spacing: 1px;
-    padding: 0 25px;
+    padding: 0 20px;
 }
 h3 {
     font-size: 1.25em;
     font-weight: var(--secondary-text-weight);
     letter-spacing: 4px;
     position: relative;
-    margin: 25px 0 25px;
+    margin: 40px 0 20px;
 }
 
 h3::before {
@@ -134,15 +134,45 @@ h3::before {
 }
 
 .contacts, .skills, .languages, .hobbies {
-    padding: 0 25px;
+    padding: 0 20px;
 }
 
-.contacts__list-item, .languages__item {
-    padding: 5px 0 5px 30px;
+.contacts__list-item, .languages__item, .skills__list-item {
+    padding: 5px 0 5px 25px;
 }
 .contacts__list-item > a {
     text-decoration: none;
     cursor: pointer;
+}
+
+.skills__list-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.skills__list-dots {
+    /* position: relative; */
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.skills__list-dot-on {
+    position: relative;
+    height: 9px;
+    width: 9px;
+    background-color: var(--primary-text-color);
+    transition: .7s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.skills__list-dot-off {
+    background-color: var(--secondary-text-color);
+}
+
+.skills__list-dot-on:hover {
+    transform: translateY(-10px);
 }
 
 .hobbies__wrapper {
@@ -151,9 +181,34 @@ h3::before {
     justify-content: space-between;
     width: 80%;
     padding: 10px 0 0 30px;
+    margin-bottom: 30px;
 }
 
 .hobbies__image {
     width: 20%;
 }
 
+
+
+
+
+
+
+.footer__wrapper {
+    margin: auto;
+    padding: 0 25px;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: var(--secondary-text-color);
+}
+.footer__wrapper-item {
+    height: 55%;
+    width: 10%;
+    transition: 0.3s ease-in-out;
+}
+.footer__wrapper-item:hover {
+    height: 60%;
+}
