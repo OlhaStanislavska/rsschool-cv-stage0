@@ -8,7 +8,7 @@ html {
     margin: 0;
     box-sizing: border-box;
     font-family: var(--primary-font);
-    font-size: 17px;
+    font-size: 16px;
     color: var(--primary-text-color);
 }
 
@@ -93,7 +93,7 @@ a.nav-link:hover {
 .profile__decor-line {
     position: absolute;
     content: "";
-    top: -75px;
+    top: -77px;
     left: 20px;
     height: 150px;
     width: 35px;
@@ -102,7 +102,7 @@ a.nav-link:hover {
 }
 h1 {
     position: relative;
-    font-size: 2.35em;
+    font-size: 2.45em;
     font-weight: 900;
     padding: 0 20px;
     line-height: 100%;
@@ -152,7 +152,6 @@ h3::before {
     align-items: baseline;
 }
 .skills__list-dots {
-    /* position: relative; */
     width: 40%;
     display: flex;
     flex-direction: row;
