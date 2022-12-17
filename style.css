@@ -26,7 +26,6 @@ html {
 body {
     background-color: var(--primary-background-color);
     min-width: 320px;
-    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -44,6 +43,117 @@ ul {
     padding-inline-start: 0;
 }
 
-  .uppercase {
+.uppercase {
     text-transform: uppercase;
 }
+.italic {
+    font-style: italic;
+}
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+header {
+    background-color: var(--secondary-text-color);
+}
+.nav-list {
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a.nav-link {
+    color: var(--primary-block-color);
+    font-size: 0.8em;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+a.nav-link:hover {
+    font-size: 0.95em;
+    font-weight: 500;
+}
+.column-wrapper {
+    display: flex;
+    flex-direction: row;
+ }
+.column-left {
+    width: 38%;
+    background-color: var(--secondary-block-color);
+    padding: 25px;
+}
+.column-right {
+    width: 62%;
+    background-color: var(--primary-block-color);
+    padding: 25px;
+}
+.profile__name-container {
+    position: relative;
+    margin-bottom: 35px;
+}
+.profile__decor-line {
+    position: absolute;
+    content: "";
+    top: -75px;
+    left: 25px;
+    height: 150px;
+    width: 35px;
+    background-color: var(--secondary-text-color);
+    z-index: 5;
+}
+h1 {
+    position: relative;
+    font-size: 2.4em;
+    font-weight: 900;
+    padding: 0 25px;
+    line-height: 100%;
+    margin: 30px 0 7px 0;
+    z-index: 10;
+}
+h2 {
+    font-size: 1.05em;
+    font-weight: var(--primary-text-weight);
+    letter-spacing: 1px;
+    padding: 0 25px;
+}
+h3 {
+    font-size: 1.25em;
+    font-weight: var(--secondary-text-weight);
+    letter-spacing: 4px;
+    position: relative;
+    margin: 25px 0 25px;
+}
+
+h3::before {
+    content: "";
+    position: absolute;
+    background-color: var(--secondary-text-color);
+    top: 29px;
+    left: 0px;
+    width: 30px;
+    height: 5px;
+}
+
+.contacts, .skills, .languages, .hobbies {
+    padding: 0 25px;
+}
+
+.contacts__list-item, .languages__item {
+    padding: 5px 0 5px 30px;
+}
+.contacts__list-item > a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.hobbies__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    padding: 10px 0 0 30px;
+}
+
+.hobbies__image {
+    width: 20%;
+}
+
