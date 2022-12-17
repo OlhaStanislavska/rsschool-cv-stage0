@@ -3,10 +3,10 @@
 ## Junior Front-end Developer
 
 ### Contacts
-*+380 (99) 008 48 70
-*olha.stanislavska@gmail.com
-*github.com/OlhaStanislavska
-*Kyiv,  Ukraine
+* +380 (99) 008 48 70
+* olha.stanislavska@gmail.com
+* github.com/OlhaStanislavska
+* Kyiv,  Ukraine
 
 ### Skills
 * HTML 70%
