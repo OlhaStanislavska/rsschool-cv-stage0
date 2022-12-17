@@ -36,6 +36,13 @@ img {
     height: 100%;
 }
 
+li {
+    list-style: none;
+}
+
+ul {
+    padding-inline-start: 0;
+}
 
   .uppercase {
     text-transform: uppercase;
