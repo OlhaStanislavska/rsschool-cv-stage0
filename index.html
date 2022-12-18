@@ -201,14 +201,15 @@ document.querySelectorAll('.faq__question-acordion').forEach( (el) => {
             content.style.maxHeight = null;
             expand.classList.remove('active');
         } else {
-            document.querySelectorAll('.faq__question-answer').forEach((el) => el.style.maxHeight = null);
-            document.querySelectorAll('.faq__question-expand').forEach((el) => el.classList.remove('active'));
+            document.querySelectorAll('.faq__question-answer').forEach((el) => 
+                el.style.maxHeight = null);
+            document.querySelectorAll('.faq__question-expand').forEach((el) => 
+                el.classList.remove('active'));
             content.style.maxHeight = content.scrollHeight + 'px';
             expand.classList.add('active');
         }
     });
-});
-                                
+});                               
                             </pre>
                         </div>
                     </section>
@@ -223,7 +224,7 @@ document.querySelectorAll('.faq__question-acordion').forEach( (el) => {
                     <a href="https://github.com/OlhaStanislavska"> <img class="footer__wrapper-item-git" src="assets/img/github-logo.svg" alt="github logo">
                     </a>
                 </div>
-                <div class="footer__wrapper-item"">
+                <div class="footer__wrapper-item">
                     <a href="https://app.rs.school/"> <img class="footer__wrapper-item-rs" src="assets/img/rs-logo.svg" alt="RS-School logo"> </a>
                 </div>
                 <div class="footer__wrapper-item">
