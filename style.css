@@ -76,6 +76,13 @@ a.nav-link:hover {
     display: flex;
     flex-direction: row;
  }
+
+ /* @media (min-width: 540px) {
+    .column-wrapper {
+        flex-direction: row;
+    }
+} */
+
 .column-left {
     width: 35%;
     background-color: var(--secondary-block-color);
@@ -187,15 +194,63 @@ h3::before {
     width: 20%;
 }
 
+.summary__wrapper, 
+.education__wrapper, 
+.experience__wrapper, 
+.projects__wrapper {
+    margin: 25px 0 0 20px;
+}
 
+.education__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
+.education__main {
+    width: 50%;
+}
 
+.education__courses {
+    width: 43%;
+}
 
+.education__main-title, 
+.education__courses-title {
+    margin-bottom: 10px;
+}
 
+.education__main p, .education__courses-item {
+    margin-bottom: 10px;
+}
+
+.experience__block-title {
+    margin: 10px 0;
+}
+
+.experience__block-text.italic {
+    margin-bottom: 8px;
+}
+
+.projects__wrapper h4 {
+    margin-bottom: 10px;
+}
+
+.projects__wrapper a {
+    text-decoration: none;
+}
+.projects__wrapper a > h4:hover {
+    color: var(--secondary-text-color);
+}
+.projects__code {
+    max-width: 300px;
+    font-size: 0.8em;
+    line-height: 1.3;
+}
 
 .footer__wrapper {
     margin: auto;
-    padding: 0 25px;
+    padding: 0 15px;
     height: 45px;
     display: flex;
     flex-direction: row;
@@ -205,9 +260,9 @@ h3::before {
 }
 .footer__wrapper-item {
     height: 55%;
-    width: 10%;
+    width: 8%;
     transition: 0.3s ease-in-out;
 }
-.footer__wrapper-item:hover {
-    height: 60%;
+.footer__wrapper-item-rs:hover, .footer__wrapper-item-git:hover {
+    transform: scale(1.05);
 }
